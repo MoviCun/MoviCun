@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer'
 import Main from './components/Main/Main';
 import Avisos from './components/Header/Sections/Avisos-viales';
 import Paraderos from './components/Header/Sections/Paraderos';
@@ -17,6 +18,7 @@ function App() {
         <Route path="/paraderos" element={<Paraderos />} />
         <Route path="/ayuda" element={<Ayuda />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
